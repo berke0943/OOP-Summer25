@@ -3,7 +3,7 @@ last_name= "Haliloglu "
 index_number= 35274
 nationality="Turkish"
 starting_date ="03-09-2024"
-courses ="Computer science"
+courses= ["mathematice","English","computer science"]git add .
 
 
 print("First Name:", first_name)
