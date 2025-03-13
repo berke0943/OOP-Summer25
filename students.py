@@ -1,3 +1,22 @@
+def get_students_info():
+    form = {
+        "first_name": "",
+        "last_name": "",
+        "index_number": "",
+        "nationality": "",
+        "starting_date":"",
+        "course":""
+    }
+    
+    for key in form.keys():
+        value = input(f"Please write Student's {key} : ")
+        form[key] = value
+    
+    return form
+
+new_student = get_students_info()
+print("New Student:", new_student)
+
 student1= {
     'first_name':'Berke',
     'last_name':'Haliloglu',
@@ -6,7 +25,6 @@ student1= {
     'starting_date':'03-09-2024',
     'courses':["mathematics","English","computer science"]
     }
-
 student2 ={
 'first_name' : "Serra",
 'last_name' : "Ozbek",
@@ -40,7 +58,7 @@ student5 ={
 'courses' : ["Math","Basics of digital technology", "Basics of Marketing","Basics of telecommunications", "English ours II", "Ethics", "Logistics", "Object-oriented programming"]
 }
 
-students = [student1,student2, student3, student4,student5]
+students = [student1,student2, student3, student4,student5,new_student]
 
 
 for student in students:
