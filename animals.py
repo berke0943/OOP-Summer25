@@ -1,3 +1,14 @@
+class animal:
+    def __init__(self, name, group, number_of_legs, skills):
+        self.name = name
+        self.group = group
+        self.number_of_legs = number_of_legs
+        self.skills = skills
+
+    def __str__(self):
+        return f"Animal(name: {self.name}, Group : {self.group}, Leg number: {self.number_of_legs}, Skills: {self.skills})"
+
+
 
 animal1 = {
     'name': 'Dog',
