@@ -1,30 +1,38 @@
-#1. Question 
+# 1. Question Print your name on the screen.
 print("Berke")
 
-#2. Question 
-my_age=20
-print(my_age)
+# 2. Question Assign 10 to a variable x, 3.5 to a variable y, and print their sum.
+x = 10
+y = 3.5
+print(x + y)
 
-#3. Question
-name="Berke"
-my_age=20
-print(type(name))
-print(type(my_age))
+# 3.Question Get the user's name and print "Hello, +name".
+name = input("Enter your name: ")
+print("Hello, " + name)
 
-#4. Question
-x=5
-if x > 5 :
-    print("X is greater than 5")
-elif x==5:
-    print("X equal to 5")
+# 4.Question Create a dictionary and print the countries' capital:
+country = {
+    "name": "Turkey",
+    "population": "85 million",
+    "continent": "Asia-Europe",
+    "capital": "Ankara"
+}
+print(country["capital"])  # Output: Ankara
+
+
+# 5.Question Ask the user for their age and print whether they are a child, teenager, adult, or senior.
+age = int(input("Enter your age: "))
+if age < 13:
+    print("You are a child.")
+elif age < 18:
+    print("You are a teenager.")
+elif age < 65:
+    print("You are an adult.")
 else:
-    print("X is less than 5")
+    print("You are a senior.")
 
-#5. Question
-fruits = ["apple", "pear", "banana", "strawberry", "orange"]
-print(fruits)
 
-#6. Question 
+#6. Question  Create a list with nafruits and print each item on a new line.
 fruits = ["apple", "pear", "banana", "strawberry", "orange"]
 print(fruits)
 for fruit in fruits:
@@ -32,7 +40,7 @@ for fruit in fruits:
 
 
 
-#7. Question
+#7. Question Create a dictionary
 student= {
   "name": "Berke",
   "index_numver": 35274,
@@ -40,7 +48,8 @@ student= {
 }
 print(student)
 
-#8. Question
+#8. Question Create a class "Car" with attributes name and model. 
+# Create one object and print its information.
 class Car:
     def __init__(self,name,model):
         self.name=name
@@ -52,11 +61,11 @@ car2 = Car("Ford", "Mustang")
 print(car1.model)
 print(car2.name)
 
-#9. Question 
+#9. Write a while loop that prints numbers from 1 to 10.
 for i in range(1, 11):
     print(i)
 
-#10. Question
+#10. Create a list aand add new item
 fruits = ["apple", "banana", "orange"]
 print(fruits[-1]) 
 
